@@ -1,0 +1,84 @@
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+
+    .encabezado {
+        width: 100%;
+        background-color: #1C1C1C;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .encabezado h1 {
+        margin: 0;
+        font-size: 2rem;
+        color: #FFFFFF;
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+
+    .columna.servicios {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tarjeta {
+        background-color: #1C1C1C;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .tarjeta:hover {
+        background-color: #2E2E2E;
+        transform: scale(1.05);
+    }
+
+    .tarjeta h2 {
+        margin: 0 0 10px;
+        font-size: 1.2rem;
+        color: #FFD700;
+    }
+
+    .estado {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .estado.operando {
+        background-color: #28A745;
+        color: #FFFFFF;
+    }
+
+    .estado.intermitente {
+        background-color: #FFC107;
+        color: #000;
+    }
+
+    .estado.inalcanzable {
+        background-color: #DC3545;
+        color: #FFF;
+    }

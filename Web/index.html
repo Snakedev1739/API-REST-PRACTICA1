@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de servicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Estado de servicios</h1>
+    </header>
+    <main class="contenedor">
+        <section class="columna servicios">
+            <div class="tarjeta">
+                <h2>Web</h2>
+                <span class="estado intermitente">Consultando</span>
+            </div>
+            <div class="tarjeta">
+                <h2>VPS</h2>
+                <span class="estado intermitente">Consultando</span>
+            </div>
+            <div class="tarjeta">
+                <h2>Bot</h2>
+                <span class="estado intermitente">Consultando</span>
+            </div>
+            <div class="tarjeta">
+                <h2>CNC</h2>
+                <span class="estado intermitente">Consultando</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

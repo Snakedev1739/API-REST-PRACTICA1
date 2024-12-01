@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de usuarios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='usuarios.css') }}">
+    <script src="{{ url_for('static', filename='js/usuarios.js') }}"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Gestion de usuarios</h1>
+    </header>
+    <main class="contenedor">
+        <section class="filtrar-datos">
+            <h2>Filtrar usuario</h2>
+            <form id="form-filtrar">
+                <label for="filtrar-email">Correo electronico:</label>
+                <input type="email" id="filtrar-email" name="filtrar-email" placeholder="Escribe el correo del usuario">
+                <button type="submit">Consultar</button>
+            </form>
+            <div id="datos-filtrados" class="datos-usuario">
+                <div><strong>Nombre:</strong> <span>Nada</span></div>
+                <div><strong>Email:</strong> <span>Nada</span></div>
+                <div><strong>Rol:</strong> <span>Nada</span></div>
+                <div><strong>Contraseña:</strong> <span>Nada</span></div>
+            </div>
+        </section>
+        <section class="modificar-datos">
+            <h2>Modificar datos</h2>
+            <form id="form-modificar">
+                <label for="modificar-nombre">Nombre:</label>
+                <input type="text" id="modificar-nombre" name="nombre" placeholder="Escribe el nuevo nombre">
+                
+                <label for="modificar-rol">Rol:</label>
+                <select id="modificar-rol" name="rol">
+                    <option value="administrador">Administrador</option>
+                    <option value="usuario">Usuario</option>
+                </select>
+                
+                <label for="modificar-password">Contraseña:</label>
+                <input type="password" id="modificar-password" name="password" placeholder="Escribe la nueva contraseña">
+                
+                <input type="hidden" id="modificar-email" name="email" value="">
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
